@@ -1,4 +1,4 @@
-# Project Name
+# Proof of concept of integration of Playwright with SpecFlow and NUnit
 
 This project is a generic test or proof of concept for the integration of Playwright, C#, SpecFlow, and NUnit libraries into one working test framework.
 Overview
