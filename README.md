@@ -1,6 +1,6 @@
 # Project Name
 
-This project is a generic test or proof of concept for the Playwright, C#, SpecFlow, and NUnit frameworks.
+This project is a generic test or proof of concept for the integration of Playwright, C#, SpecFlow, and NUnit libraries into one working test framework.
 Overview
 
 The project includes several features, hooks, page objects, steps, and utils. It uses the Page Object Model design pattern to create a clean and maintainable codebase.
@@ -33,13 +33,8 @@ Solution
 ├── PageObjects
 |   ├── BasePage.cs
 |   ├── GooglePage.cs
-|   ├── LoginPage.cs
-|   ├── ProjectsPage.cs
 |   └── SampleTestPage.cs
 ├── Steps
-|   ├── LoginFunctionalityStepDefinitons.cs
-|   ├── ProjectDetailsStepDefinitons.cs
-|   ├── ProjectPageStepDefinitions.cs
 |   └── TestPageFlowBetweenTwoObjects.cs
 └── Utils
     ├── EmailHelper.cs
