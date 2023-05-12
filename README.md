@@ -56,3 +56,6 @@ Contributions are welcome! Please submit a pull request to the develop branch.
 # License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+# Introduction of API connector point
+Integration of API testing can help create more comprehensive end-to-end tests that cover both the user interface and the underlying APIs. This can give more complete picture of your application's functionality and performance and help identify potential issues that may not be visible through UI testing alone.
