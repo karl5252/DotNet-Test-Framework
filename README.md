@@ -1,10 +1,10 @@
-﻿#Project Name
+# Project Name
 
 This project is a generic test or proof of concept for the Playwright, C#, SpecFlow, and NUnit frameworks.
 Overview
 
 The project includes several features, hooks, page objects, steps, and utils. It uses the Page Object Model design pattern to create a clean and maintainable codebase.
-#Project Structure
+# Project Structure
 
 The project is structured as follows:
 
@@ -46,7 +46,7 @@ Solution
     ├── NamesDictionary.cs
     └── RandomStringsHelpers.cs
 ```
-#Usage
+# Usage
 
 To use this project, follow these steps:
 
@@ -55,9 +55,9 @@ To use this project, follow these steps:
     Build the solution.
     Run the tests.
 
-#Contributing
+# Contributing
 
 Contributions are welcome! Please submit a pull request to the develop branch.
-#License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
