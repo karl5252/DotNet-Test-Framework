@@ -59,3 +59,11 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 # Introduction of API connector point
 Integration of API testing can help create more comprehensive end-to-end tests that cover both the user interface and the underlying APIs. This can give more complete picture of your application's functionality and performance and help identify potential issues that may not be visible through UI testing alone.
+Example of gherking based api scenario
+```(bash)
+Given the API endpoint for getting a list of users is available
+When I make a GET request to the API endpoint
+Then the API should return a list of users
+And each user in the list should have a name, email, and ID field
+```
+By using BDD and Gherkin syntax, the API tests can be easily understood by all stakeholders and ensure that the system behaves as expected.
