@@ -1,5 +1,7 @@
 ﻿using Microsoft.Playwright;
 using SelfServicePortal.Specs.Drivers;
+using SelfServicePortal.Specs.Steps;
+using TechTalk.SpecFlow;
 
 namespace SelfServicePortal.Specs.PageObjects
 {
@@ -27,6 +29,8 @@ namespace SelfServicePortal.Specs.PageObjects
         }
         public async Task ClickSearch() 
         {
+            var scenarioContext = ScenarioContextHelper.GetScenarioContext();
+            scenarioContext.Set(_page, "Page");
             await _page.GetByRole(AriaRole.Button, new() { Name = "Odrzuć wszystko" }).ClickAsync();
             await _page.GetByRole(AriaRole.Button, new() { Name = "Szukaj w Google" }).ClickAsync();
 

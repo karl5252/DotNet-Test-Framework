@@ -7,12 +7,23 @@ using System.Threading.Tasks;
 using SelfServicePortal.Specs.Config;
 using SelfServicePortal.Specs.Drivers;
 using SelfServicePortal.Specs.PageObjects;
+using SelfServicePortal.Specs.Steps;
 using TechTalk.SpecFlow;
 
 namespace SelfServicePortal.Specs.Hooks
 {
     public class DriverHook 
     {
+        [Binding]
+        public class Hooks
+        {
+            [BeforeScenario]
+            public void BeforeScenario()
+            {
+                ScenarioContextHelper.SetScenarioContext(ScenarioContext.Current);
+            }
+        }
+
 
 
         /*

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Playwright;
 using SelfServicePortal.Specs.Drivers;
+using SelfServicePortal.Specs.Steps;
+using TechTalk.SpecFlow;
 
 namespace SelfServicePortal.Specs.PageObjects
 {
@@ -7,12 +9,14 @@ namespace SelfServicePortal.Specs.PageObjects
     {
         public SampleTestPage(IPageFactory pageFactory) : base(pageFactory)
         {
-           // _page = pageFactory.NewPageAsync()
+
         }
 
         public async Task ClickAlertButton()
         {
-            var _page = await GetOrCreatePageAsync(_pageFactory);
+            var scenarioContext = ScenarioContextHelper.GetScenarioContext();
+            var _page = scenarioContext.Get<IPage>("Page");
+            //var _page = await GetOrCreatePageAsync(_pageFactory);
 
             await _page.GetByLabel("Name(required)").ClickAsync();
 
@@ -21,6 +25,9 @@ namespace SelfServicePortal.Specs.PageObjects
 
         public async Task ClickDragAndDropLink()
         {
+            var scenarioContext = ScenarioContextHelper.GetScenarioContext();
+            var _page = scenarioContext.Get<IPage>("Page");
+
             await _page.GetByRole(AriaRole.Link, new() { Name = "Drag And Drop" }).ClickAsync();
 
         }
