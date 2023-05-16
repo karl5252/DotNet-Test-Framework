@@ -1,4 +1,5 @@
-﻿using SelfServicePortal.Specs.Drivers;
+﻿using Microsoft.Playwright;
+using SelfServicePortal.Specs.Drivers;
 
 namespace SelfServicePortal.Specs.PageObjects
 {
@@ -16,6 +17,12 @@ namespace SelfServicePortal.Specs.PageObjects
             await _page.GetByLabel("Name(required)").ClickAsync();
 
             await _page.GetByLabel("Name(required)").FillAsync("tester");
+        }
+
+        public async Task ClickDragAndDropLink()
+        {
+            await _page.GetByRole(AriaRole.Link, new() { Name = "Drag And Drop" }).ClickAsync();
+
         }
     }
 }

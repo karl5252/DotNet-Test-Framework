@@ -38,6 +38,7 @@ namespace SelfServicePortal.Specs.Steps
         public async Task ThenTheUserClicksTheButtonOnThePage()
         {
             await _sampleTestPage.ClickAlertButton();
+            await _sampleTestPage.ClickDragAndDropLink();
 
 
             // Handle the alert dialog box
