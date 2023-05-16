@@ -22,9 +22,12 @@ namespace Dependency_Injection
             builder.RegisterType<PageFactory>().As<IPageFactory>().SingleInstance();
             builder.RegisterType<GooglePage>().As<GooglePage>();
             builder.RegisterType<SampleTestPage>().As<SampleTestPage>();
+            builder.RegisterType<SampleTestPageDragDrop>().As<SampleTestPageDragDrop>();
 
             // Register StepDefinitions
             builder.RegisterType<TestPageFlowBetweenTwoObjects>();
+            builder.RegisterType<TestPassingDataBetweenThreeObjectsStepDefinitions>();
+
 
             // Register the browser
             var browserType = AppConfig.BrowserType;
