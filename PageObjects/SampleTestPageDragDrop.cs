@@ -17,7 +17,7 @@ namespace SelfServicePortal.Specs.PageObjects
             var scenarioContext = ScenarioContextHelper.GetScenarioContext();
             var _page = scenarioContext.Get<IPage>("Page");
 
-            await _page.FrameLocator("iframe[name=\"aswift_4\"]").FrameLocator("iframe[name=\"ad_iframe\"]").GetByRole(AriaRole.Button, new() { Name = "Close ad" }).ClickAsync();
+           // await _page.FrameLocator("iframe[name=\"aswift_4\"]").FrameLocator("iframe[name=\"ad_iframe\"]").GetByRole(AriaRole.Button, new() { Name = "Close ad" }).ClickAsync();
             await _page.GetByRole(AriaRole.Tab, new() { Name = "Accepted Elements" }).ClickAsync();
             await _page.GetByRole(AriaRole.Tab, new() { Name = "Propagation" }).ClickAsync();
         }
