@@ -11,7 +11,7 @@ namespace SelfServicePortal.Specs.Utils
     {
         public async Task<Tuple<bool, string>> ExtractEmailCodeAsync(string user) 
         {
-            string email = "automationuser@restmail.net";//ConfigurationManager.AppSettings[$"{user}.email"];
+            string email = "test@restmail.net";//ConfigurationManager.AppSettings[$"{user}.email"];
             string username = email.Substring(0, email.IndexOf("@"));
             string url = $"http://restmail.net/mail/{username}";
 
